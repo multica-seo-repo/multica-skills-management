@@ -1,5 +1,62 @@
 {
   "schema_version": 1,
   "organization": "multica-seo-repo",
-  "skills": []
+  "skills": [
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "054003ca-0f22-4b09-b96e-9ffc6b803291",
+      "repository": { "id": "1406631811", "name": "Onsite_audit_SF_shared_config", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "e74483bd-4c7c-4850-ac46-5ee4ad4e2ce7",
+      "repository": { "id": "1405208014", "name": "Onsite_audit_HTTPS_related_checking", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "b8d08da7-a8bc-4c34-9b28-05b92e61f70b",
+      "repository": { "id": "1405389735", "name": "Onsite_audit_robot_txt_checking", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "21ab742e-b794-47e6-9006-f833e9288b01",
+      "repository": { "id": "1407044594", "name": "Onsite_audit_sitemap_check", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "c074f89a-f902-4e58-bbbb-dbbf1c0016ca",
+      "repository": { "id": "1415006455", "name": "Onsite_audit_pagination_check", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "2835a0cf-797f-472e-b8bd-38e69bfc9925",
+      "repository": { "id": "1409963353", "name": "Onsite_audit_hreflang_check", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "0b82ad82-2958-4c0f-a372-1feb2966d636",
+      "repository": { "id": "1415311664", "name": "Onsite_content_audit_pagetitle-meta_description__heading_image", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "b7a8a4e8-b2ed-4513-a782-6a6d1070546a",
+      "repository": { "id": "1420382042", "name": "Onsite_audit_Report_Consolidator", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    }
+  ]
 }

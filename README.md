@@ -10,7 +10,7 @@ Each skill keeps its own repository, files, and Git history. This repository pro
 | --- | ---: | --- |
 | [Onsite Audit](#onsite-audit) | 9 | multica-seo-repo |
 
-Catalog checked against GitHub on **2026-11-02**. The catalog contains 9 repositories; one is an empty repository awaiting its first commit. These are repository counts, not confirmed Multica registration counts.
+Catalog checked against GitHub and Multica on **2026-11-02**. The catalog contains 9 repositories. Eight have confirmed Multica skill bindings; the empty Robots meta tag repository remains unbound.
 
 ## Onsite Audit
 
@@ -31,7 +31,7 @@ Series topic: `onsite-audit`. The following repositories belong to this Organiza
 ## Catalog and publishing bindings
 
 - **This README** is the human-readable repository catalog. A link can be listed before its Multica identity is confirmed.
-- **[skills-map.json](skills-map.json)** is reserved for confirmed, machine-readable publishing bindings. It starts with an empty `skills` array because real Multica workspace IDs and skill IDs have not yet been supplied or verified.
+- **[skills-map.json](skills-map.json)** contains eight confirmed, machine-readable Onsite Audit bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
 - Catalog inclusion, matching names, and GitHub topics do **not** establish a publishing binding.
 - Before adding a binding, a human must confirm the target repository, branch, and skill-relative path. The root directory is represented by `.`.
 - A binding identifies the source by `workspace_id` and `skill_id`, and the target by repository ID, name, branch, and relative path. Do not store credentials or personal machine paths.
