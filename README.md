@@ -10,7 +10,7 @@ Each skill keeps its own repository, files, and Git history. This repository pro
 | --- | ---: | --- |
 | [Onsite Audit](#onsite-audit) | 9 | multica-seo-repo |
 
-Catalog checked against GitHub and Multica on **2026-11-02**. The catalog contains 9 repositories. Eight have confirmed Multica skill bindings; the empty Robots meta tag repository remains unbound.
+Catalog checked against GitHub and Multica on **2026-11-02**. The Onsite Audit series contains 9 repositories in `multica-seo-repo`. Eight have confirmed Multica skill bindings; the empty Robots meta tag repository remains unbound. One additional imported skill has a confirmed binding in `firstpage-seo`.
 
 ## Onsite Audit
 
@@ -28,10 +28,16 @@ Series topic: `onsite-audit`. The following repositories belong to this Organiza
 | Page titles, meta descriptions, headings, and images | [Onsite_content_audit_pagetitle-meta_description__heading_image](https://github.com/multica-seo-repo/Onsite_content_audit_pagetitle-meta_description__heading_image) | Has commits |
 | Audit report consolidation | [Onsite_audit_Report_Consolidator](https://github.com/multica-seo-repo/Onsite_audit_Report_Consolidator) | Has commits |
 
+### Imported skill in firstpage-seo
+
+| Skill | Repository path | Status |
+| --- | --- | --- |
+| Canonical, meta tags and images extraction | [onsite-canonical-meta-images-extraction-multica](https://github.com/firstpage-seo/onsite-checking-AI-workflows/tree/main/.claude/skills/onsite-canonical-meta-images-extraction-multica) | Confirmed binding and published snapshot |
+
 ## Catalog and publishing bindings
 
 - **This README** is the human-readable repository catalog. A link can be listed before its Multica identity is confirmed.
-- **[skills-map.json](skills-map.json)** contains eight confirmed, machine-readable Onsite Audit bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
+- **[skills-map.json](skills-map.json)** contains nine confirmed, machine-readable skill bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
 - Catalog inclusion, matching names, and GitHub topics do **not** establish a publishing binding.
 - Before adding a binding, a human must confirm the target repository, branch, and skill-relative path. The root directory is represented by `.`.
 - A binding identifies the source by `workspace_id` and `skill_id`, and the target by repository ID, name, branch, and relative path. Do not store credentials or personal machine paths.

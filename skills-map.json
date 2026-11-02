@@ -57,6 +57,13 @@
       "repository": { "id": "1420382042", "name": "Onsite_audit_Report_Consolidator", "branch": "main" },
       "path": ".",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "6bdeed83-8b84-429e-aa01-e26faff778c9",
+      "repository": { "id": "1303788106", "name": "onsite-checking-AI-workflows", "branch": "main" },
+      "path": ".claude/skills/onsite-canonical-meta-images-extraction-multica",
+      "sync_enabled": true
     }
   ]
 }
