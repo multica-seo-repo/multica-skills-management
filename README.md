@@ -58,6 +58,11 @@ This workflow is the agreed operating design; creating this catalog does not dep
 
 ## Workspace configuration backups
 
-The planned companion repository, `multica-workspace-config`, will hold agent system prompts, workspace General Rules, and explicitly selected workspace settings. It is separate from skill content and this catalog.
+The private companion repository, [multica_workspace_backup](https://github.com/multica-seo-repo/multica_workspace_backup), stores versioned backups of agent system prompts, workspace General Rules, and explicitly selected workspace settings.
 
-That companion repository is not created or linked by this initialization. Do not store secrets, SSH keys, tokens, or runtime credentials in either repository.
+- Configuration bindings belong in its `config-map.json`; skill publishing bindings remain in this repository's `skills-map.json`.
+- Workspace files are grouped by workspace ID, and agent prompts by agent ID. See the [backup repository README](https://github.com/multica-seo-repo/multica_workspace_backup#readme) for the layout and publishing rules.
+- Access to the backup repository requires the appropriate GitHub permissions. This public catalog contains navigation only; it does not contain the backed-up prompts or rules.
+- The repository starts without confirmed Multica bindings or exported workspace content. Creating it does not deploy the GitHub Agent or enable synchronization.
+
+Do not store secrets, SSH keys, tokens, or runtime credentials in either repository.
