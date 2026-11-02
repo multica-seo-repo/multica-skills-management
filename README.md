@@ -9,10 +9,8 @@ Each skill keeps its own repository, files, and Git history. This repository pro
 | Series | Repositories | Location |
 | --- | ---: | --- |
 | [Onsite Audit](#onsite-audit) | 9 | multica-seo-repo |
-| [Keyword Research](#keyword-research) | 1 | timn-firstpage — external |
-| [Google Drive and File Delivery](#google-drive-and-file-delivery) | 1 | timn-firstpage — external |
 
-Catalog checked against GitHub on **2026-11-02**. The catalog contains 11 repositories; one is an empty repository awaiting its first commit. These are repository counts, not confirmed Multica registration counts.
+Catalog checked against GitHub on **2026-11-02**. The catalog contains 9 repositories; one is an empty repository awaiting its first commit. These are repository counts, not confirmed Multica registration counts.
 
 ## Onsite Audit
 
@@ -30,22 +28,6 @@ Series topic: `onsite-audit`. The following repositories belong to this Organiza
 | Page titles, meta descriptions, headings, and images | [Onsite_content_audit_pagetitle-meta_description__heading_image](https://github.com/multica-seo-repo/Onsite_content_audit_pagetitle-meta_description__heading_image) | Has commits |
 | Audit report consolidation | [Onsite_audit_Report_Consolidator](https://github.com/multica-seo-repo/Onsite_audit_Report_Consolidator) | Has commits |
 
-## Keyword Research
-
-These links currently point to repositories outside this Organization. Listing them does not transfer ownership or authorize publishing.
-
-| Skill / purpose | Repository | Current owner |
-| --- | --- | --- |
-| Service and collection page keyword research for Hong Kong | [service-collection-page-keyword-research-hk](https://github.com/timn-firstpage/service-collection-page-keyword-research-hk) | timn-firstpage |
-
-## Google Drive and File Delivery
-
-These links currently point to repositories outside this Organization.
-
-| Skill / purpose | Repository | Current owner |
-| --- | --- | --- |
-| Service account setup and Google Drive uploads | [googledrive_upload_skill_for_agents](https://github.com/timn-firstpage/googledrive_upload_skill_for_agents) | timn-firstpage |
-
 ## Catalog and publishing bindings
 
 - **This README** is the human-readable repository catalog. A link can be listed before its Multica identity is confirmed.
@@ -53,7 +35,7 @@ These links currently point to repositories outside this Organization.
 - Catalog inclusion, matching names, and GitHub topics do **not** establish a publishing binding.
 - Before adding a binding, a human must confirm the target repository, branch, and skill-relative path. The root directory is represented by `.`.
 - A binding identifies the source by `workspace_id` and `skill_id`, and the target by repository ID, name, branch, and relative path. Do not store credentials or personal machine paths.
-- When confirmed bindings are added, keep the README catalog aligned. Keep unbound or external entries clearly identified.
+- When confirmed bindings are added, keep the README catalog aligned. Keep unbound entries clearly identified.
 
 ## Publishing workflow
 
