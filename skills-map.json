@@ -85,6 +85,17 @@
       "repository": { "id": "1446467119", "name": "filling-article-to-brief", "branch": "main" },
       "path": ".",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "6c4eea5f-30cc-42f3-8af0-4368e6d68762",
+      "repository": {
+        "id": "1426824847",
+        "name": "Onsite_audit_12_robots_meta_tag",
+        "branch": "main"
+      },
+      "path": ".",
+      "sync_enabled": true
     }
   ]
 }
