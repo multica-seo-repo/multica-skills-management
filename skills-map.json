@@ -64,6 +64,13 @@
       "repository": { "id": "1303788106", "name": "onsite-checking-AI-workflows", "branch": "main" },
       "path": ".claude/skills/onsite-canonical-meta-images-extraction-multica",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "e3f93d62-803e-4d9f-a00f-f52380d50a1c",
+      "repository": { "id": "1446390937", "name": "blog-upload-v2", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
     }
   ]
 }
