@@ -9,7 +9,7 @@ Each skill keeps its own repository, files, and Git history. This repository pro
 | Series | Repositories | Location |
 | --- | ---: | --- |
 | [Onsite Audit](#onsite-audit) | 9 | multica-seo-repo |
-| [Content Publishing](#content-publishing) | 1 | multica-seo-repo |
+| [Content Publishing](#content-publishing) | 3 | multica-seo-repo |
 
 Catalog checked against GitHub and Multica on **2026-11-02**. The Onsite Audit series contains 9 repositories in `multica-seo-repo`. Eight have confirmed Multica skill bindings; the empty Robots meta tag repository remains unbound. One additional imported skill has a confirmed binding in `firstpage-seo`.
 
@@ -37,18 +37,20 @@ Series topic: `onsite-audit`. The following repositories belong to this Organiza
 
 ## Content Publishing
 
-Series topic: `content-publishing`. Repository topics: `multica`, `blog-upload`, `wordpress`, `content-publishing`.
+Series topic: `content-publishing`. All repositories share `multica` and `content-publishing`; skill-specific topics include `blog-upload`, `wordpress`, `blog-writing` and `docx`.
 
 | Skill / purpose | Repository | Status |
 | --- | --- | --- |
 | Upload DOCX, Markdown or HTML articles to WordPress as drafts using project-local credentials | [blog-upload-v2](https://github.com/multica-seo-repo/blog-upload-v2) | Confirmed binding and published snapshot |
+| Write a finished article TXT with meta title and meta description from a completed brief or outline | [blog-writing-from-brief](https://github.com/multica-seo-repo/blog-writing-from-brief) | Confirmed binding and published snapshot |
+| Insert finished article TXT and metadata into a supplied brief DOCX while preserving unrelated content | [filling-article-to-brief](https://github.com/multica-seo-repo/filling-article-to-brief) | Confirmed binding and published snapshot |
 
 Added on **2026-11-05**. The complete skill package lives in its independent repository; this catalog contains navigation and its publishing binding.
 
 ## Catalog and publishing bindings
 
 - **This README** is the human-readable repository catalog. A link can be listed before its Multica identity is confirmed.
-- **[skills-map.json](skills-map.json)** contains ten confirmed, machine-readable skill bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
+- **[skills-map.json](skills-map.json)** contains twelve confirmed, machine-readable skill bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
 - Catalog inclusion, matching names, and GitHub topics do **not** establish a publishing binding.
 - Within verified publishing authorization, the GitHub Agent may establish deterministic bindings after validating source and repository identity, branch and path. New destinations or ambiguous ownership require human confirmation. The root directory is represented by `.`.
 - A binding identifies the source by `workspace_id` and `skill_id`, and the target by repository ID, name, branch, and relative path. Do not store credentials or personal machine paths.

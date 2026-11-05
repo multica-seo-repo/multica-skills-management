@@ -71,6 +71,20 @@
       "repository": { "id": "1446390937", "name": "blog-upload-v2", "branch": "main" },
       "path": ".",
       "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "584b6610-8b6d-4fdb-9ea3-c884d375a3ba",
+      "repository": { "id": "1446466566", "name": "blog-writing-from-brief", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
+    },
+    {
+      "workspace_id": "1f4fe869-99a7-4f9b-b8dc-929915a1099e",
+      "skill_id": "3bf9ca36-bdba-4726-bb5d-27c9079c3965",
+      "repository": { "id": "1446467119", "name": "filling-article-to-brief", "branch": "main" },
+      "path": ".",
+      "sync_enabled": true
     }
   ]
 }
