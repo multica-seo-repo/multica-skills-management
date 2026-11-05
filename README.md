@@ -50,15 +50,15 @@ Added on **2026-11-05**. The complete skill package lives in its independent rep
 - **This README** is the human-readable repository catalog. A link can be listed before its Multica identity is confirmed.
 - **[skills-map.json](skills-map.json)** contains ten confirmed, machine-readable skill bindings. Each entry records a `workspace_id`, `skill_id`, GitHub repository ID/name/branch, skill-relative `path`, and `sync_enabled` state. Binding confirmation does not mean a new content publication has completed.
 - Catalog inclusion, matching names, and GitHub topics do **not** establish a publishing binding.
-- Before adding a binding, a human must confirm the target repository, branch, and skill-relative path. The root directory is represented by `.`.
+- Within verified publishing authorization, the GitHub Agent may establish deterministic bindings after validating source and repository identity, branch and path. New destinations or ambiguous ownership require human confirmation. The root directory is represented by `.`.
 - A binding identifies the source by `workspace_id` and `skill_id`, and the target by repository ID, name, branch, and relative path. Do not store credentials or personal machine paths.
 - When confirmed bindings are added, keep the README catalog aligned. Keep unbound entries clearly identified.
 
 ## Publishing workflow
 
 1. The Agent and Skills Governor completes and validates an approved skill change in Multica.
-2. The Governor preserves the exact final snapshot and asynchronously hands it to the GitHub Agent. The Governor can finish its current run after recording the handover.
-3. The GitHub Agent reads and validates the confirmed binding. Missing or invalid bindings require human guidance and confirmation before publishing.
+2. The Governor preserves the exact final snapshot and dispatches it to the GitHub Agent. The Governor may finish after confirming actual assignment or queueing and completing required delivery steps; a handover note alone is not dispatch.
+3. The GitHub Agent reads and validates the confirmed binding. Missing or deterministically invalid bindings may be created or repaired within verified authorization. Ambiguous ownership or a new destination requires human confirmation.
 4. The GitHub Agent compares the snapshot with the remote baseline, validates the change, commits, pushes, and verifies the remote result. No difference means no new commit.
 5. The GitHub Agent records the repository, commit SHA, and sync status on the original or linked sync issue.
 
@@ -83,3 +83,26 @@ The public companion repository, [multica_workspace_backup](https://github.com/m
 - The repository starts without confirmed Multica bindings or exported workspace content. Creating it does not deploy the GitHub Agent or enable synchronization.
 
 Do not store secrets, SSH keys, tokens, or runtime credentials in either repository.
+
+## First publication: NEW repository proposal
+
+For a verified completed skill with no confirmed repository, first inspect mappings and repository evidence to avoid duplicates. Failed authentication or a broken binding is not evidence that no repository exists.
+
+Present this confirmation card before creating a repository:
+
+| Field | Required proposal |
+| --- | --- |
+| Action | **NEW — create an independent skill repository** |
+| Source | Workspace ID, skill ID, name and source revision |
+| Destination | Organization, repository name and full organization/repository |
+| Visibility | Public or private; explicitly disclose public publication |
+| Branch and package path | Proposed default branch and relative path, usually main and . |
+| Catalog | Catalog repository and branch |
+| Mapping | Source binding in the current skills-map.json schema using the verified repository ID |
+| README | Skill purpose, inputs/outputs, agent boundaries, usage and tests; catalog summary and link |
+| Topics and series | Prefer relevant existing classifications; label proposed additions NEW |
+| Recurring authorization | Ask whether future completed versions of this same skill and corresponding README/catalog maintenance are authorized within the confirmed destination, branch, path and visibility |
+
+Retain the original member-authored confirmation. After confirmation, proceed with the included repository creation, package and README publication, mapping, catalog and topics without asking separately for each step. Verify actual repository identity and visibility, and report content and catalog commits separately. Topics mean GitHub repository topics and catalog classifications, not Git release tags.
+
+Keep publisher-authored documentation distinct from the immutable source package. Do not silently alter source files or overwrite a supplied README. Reuse recurring authorization only within its confirmed scope; a new repository, changed visibility or additional skill is not automatically covered. Track each stage independently and resume incomplete stages after failures without creating duplicates.
