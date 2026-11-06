@@ -41,7 +41,7 @@ Series topic: `content-publishing`. All repositories share `multica` and `conten
 
 | Skill / purpose | Repository | Status |
 | --- | --- | --- |
-| Upload DOCX, Markdown or HTML articles to WordPress as drafts using project-local credentials | [blog-upload-v2](https://github.com/multica-seo-repo/blog-upload-v2) | Confirmed binding and published snapshot |
+| Upload ready HTML article fragments with an explicit title and selected featured image to WordPress as verified drafts using project-local credentials | [blog-upload-v2](https://github.com/multica-seo-repo/blog-upload-v2) | Confirmed binding and published snapshot |
 | Write a finished article TXT with meta title and meta description from a completed brief or outline | [blog-writing-from-brief](https://github.com/multica-seo-repo/blog-writing-from-brief) | Confirmed binding and published snapshot |
 | Insert finished article TXT and metadata into a supplied brief DOCX while preserving unrelated content | [filling-article-to-brief](https://github.com/multica-seo-repo/filling-article-to-brief) | Confirmed binding and published snapshot |
 
